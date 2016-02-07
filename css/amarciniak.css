@@ -1,3 +1,16 @@
 body {
 	padding-top: 50px;
+	background-color: black;
+	background-image: url('../images/vertical_cloth/vertical_cloth.png');
+}
+
+
+.container {
+	background-color: white;
+	background-image: url('../images/crossword/crossword.png');
+}
+
+#nav .container {
+	background-color: #222;
+	background-image: none;
 }
