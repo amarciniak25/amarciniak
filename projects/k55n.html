@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alexander Marciniak</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/amarciniak.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    
+    <script> 
+    $(function(){
+      $("#nav").load("./nav.html"); 
+    });
+    </script> 
+    
+  </head>
+  <body>
+  	<div id="nav"></div>
+    <div class="container">
+    	<h1>Asus K55N: Cheap Gaming Laptop</h1>
+    	<p>The goal for this project is to upgrade my Asus K55N laptop for gaming. The K55N is based on the AMD APU system which uses a combined CPU and graphics card. These systems can be found for $200 to $300 used on ebay.<span id="more-25"></span></p>
+<p>The system will be benchmarked using</p>
+<ol>
+<li><a href="https://unigine.com/products/valley/">Valley</a> &#8211; A modern 3d benchmark (Basic Preset, fullscreen, 1366&#215;768)</li>
+<li>The <a href="http://www.playonline.com/ff11eu/download/media/benchmark01.html?pageID=media">Final Fantasty 11 benchmark</a> &#8211; This is an Playstation 2 era MMO that was ported to the PC. I&#8217;m including this score because I play this game a lot, but it will show how well the system handles older CPU tied games. (High Setting)</li>
+<li>The <a href="http://na.finalfantasyxiv.com/benchmark/download/index.html">Final Fantasy 14 benchmark</a> &#8211; I would like to start playing this game and it would be great if it  the K55N can handle it. (Laptop (High), fullscreen, 1366&#215;768)</li>
+</ol>
+<div class="row">
+        <div class="col-md-4"><h3>Baseline System</h3>
+        	<ul>
+				<li>APU: AMD A8-4500M</li>
+				<li>RAM: 8gb generic DDR3 675mhz 9-9-10-24</li>
+			</ul>
+        </div>
+        <div class="col-md-4"><h3>Memory Upgrade</h3>
+        	<p>The graphics card in the APU does not have dedicated RAM, it shares system memory. So it is important to use the fastest system ram you can support. I added a <a href="http://www.amazon.com/gp/product/B00DSGLMPK/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00DSGLMPK&amp;linkCode=as2&amp;tag=alexajamesmar-20&amp;linkId=G4PKTT2542WT6KZ2">Crucial Ballistix Sport SODIMM 8GB Kit</a> which I estimate will be about 20% faster. This ram is spec at 800mhz 9-9-9-24, but my system decided to run it at 809mhz 9-9-10-24.</p>
+        </div>
+        <div class="col-md-4"><h3>APU Upgrade</h3>
+        	<p>I replaced the <a href="http://www.notebookcheck.net/AMD-A-Series-A8-4500M-Notebook-Processor.74884.0.html">A8-4500M</a> with an <a href="http://www.notebookcheck.net/AMD-A-Series-A10-4600M-Notebook-Processor.74065.0.html">A10-4600M</a>. This A10 is 400mhz faster and has 128 more shader cores than the A8. I tried to use an A10-5750M, this APU is pin compatible with the socket but the display does not work.</p>
+			<p>There is a great guide to this procedure on <a href="http://www.insidemylaptop.com/how-to-disassemble-asus-k55n-ds81/">Inside my laptop</a>. It will take about an hour.</p>
+        </div>
+      </div>
+
+	<div class="row">
+        <div class="col-md-4">
+        	<h3>Test Results</h3>
+        	<table class="table">
+				<tbody>
+					<tr>
+						<th></th>
+						<th>Base</th>
+						<th>Memory</th>
+						<th>APU</th>
+						<th>Memory and APU</th>
+					</tr>
+					<tr>
+						<th>Valley</th>
+						<td>482</td>
+						<td>540</td>
+						<td>577</td>
+						<td>633</td>
+					</tr>
+					<tr>
+						<th>FF11</th>
+						<td>4662</td>
+						<td>5165</td>
+						<td>5725</td>
+						<td>5502</td>
+					</tr>
+					<tr>
+						<th>FF14</th>
+						<td>2588</td>
+						<td>2913</td>
+						<td>2729</td>
+						<td>3138</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+        <div class="col-md-4"><h3>Analysis</h3>
+        	The upgrade gave me a 32% improvment in Valley Benchmark, 18% in FF11, and 21% in FF14. The total cost for the upgrades was around $95.
+        </div>
+        <div class="col-md-4"><h3>Conclusion</h3></div>
+      </div>
+
+	</div>
+  </body>
+</html>
